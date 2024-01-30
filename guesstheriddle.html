@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1><i>Guess the Answer!</i></h1>
+        <br>
+        <br>
+        <label>What's Your First Name?</label><br><input type="text">
+        <br>
+        <br>
+        <label>What's Your Last Name?</label><br><input type="text">
+        <br>
+        <p><b>Guess the answer for the riddle below:</b></p>
+        <br>
+        <p><i>I am something people love or hate. I change people's appearances and thoughts. If a person takes care of them self I will go up even higher. To some people, I will fool them. To others, I am a mystery. Some people might want to try and hide me but I will show. No matter how hard people try I will Never go down. What am I?</i></p>
+        <br>
+        <label>Put the Answer Below:</label><br><input type="text" id="guess">
+        <br>
+        <br>
+        <button style="font-size:25px;" onclick="answer()">Click Here for the Answer</button>
+        <br>
+        <br>
+        <br>
+        <p style="text-align:center;font-size:20px;" id="riddle"></p>
+        <script>
+            function answer(){
+            var a = document.getElementById('guess').value;
+            if(a=="age"){
+            document.getElementById('riddle').innerHTML="correct";
+            }
+            else{
+            document.getElementById('riddle').innerHTML="incorrect";
+            }
+            }
+        </script>
+    </body>
+</html>
